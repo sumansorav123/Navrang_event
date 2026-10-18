@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+  background-image: radial-gradient(circle at top, rgba(124, 57, 230, 0.25), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(255, 79, 179, 0.12), transparent 30%);
+}
+
+.page-shell {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.glass-panel {
+  @apply border border-white/10 bg-white/5 backdrop-blur-md;
+}
+
+.hero-ring {
+  box-shadow: 0 0 35px rgba(247, 201, 73, 0.32);
+}
+
+.section-title {
+  @apply mb-6 text-3xl font-bold tracking-tight text-white md:text-4xl;
+}
+
+.primary-button {
+  @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-gold via-yellow-400 to-magenta px-6 py-3 font-semibold text-slate-950 transition hover:scale-[1.02];
+}
+
+.secondary-button {
+  @apply inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white transition hover:bg-white/10;
+}
+
+.primary-button.hidden,
+.secondary-button.hidden {
+  display: none;
+}
+
+.card-hover {
+  @apply transition duration-300 hover:-translate-y-1 hover:shadow-glow;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

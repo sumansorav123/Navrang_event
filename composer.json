@@ -1,0 +1,12 @@
+{
+  "name": "navrang/events",
+  "description": "Navrang Events management website",
+  "autoload": {
+    "psr-4": {
+      "Navrang\\": "app/"
+    }
+  },
+  "require": {
+    "php": ">=8.2"
+  }
+}

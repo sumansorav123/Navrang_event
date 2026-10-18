@@ -1,0 +1,12 @@
+{
+  "name": "navrang-events",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/styles.css --watch",
+    "build": "tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/styles.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}
